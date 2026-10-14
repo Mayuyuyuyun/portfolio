@@ -1,0 +1,1243 @@
+@charset "UTF-8";
+
+/* 
+base color 
+main color 
+accesent color 
+font color 
+*/
+
+body {
+    background-color: white;
+    font-family: "Zen Maru Gothic", sans-serif;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 img {
+    width: 60%;
+}
+
+h2 {
+    font-family: "Marcellus", serif;
+    font-size: 1.8rem;
+    letter-spacing: .1em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 5%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    margin: 20px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+
+.navi {
+    display: flex;
+    justify-content: center;
+    margin-right: 50%;
+} 
+
+.navi li {
+    padding: 30px 0 0 50px;
+    font-size: 1.3rem;
+}
+
+.navi a:link,
+.navi a:visited {
+    color: #3A3A3A;
+}
+
+.navi a:hover {
+    color:  rgb(219, 128, 132);
+}
+
+.fv_img {
+    background-image: url(../img/fv.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 70%; */
+    height: 100vh;
+    /* margin: 0 auto; */
+}
+
+.fv_img p:first-of-type {
+    font-size: 1.7rem;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+    padding-top: 31%;
+    padding-right: 1%;
+    width:40%;
+    text-align: right;
+    background: linear-gradient(transparent 90%, #ffffff 0%);
+}
+
+.fv_img p:last-of-type {
+    font-size: 1.4rem;
+    line-height: 2;
+    letter-spacing: 0.1em;
+    margin-top: 1%;
+    padding-right: 1%;
+    width: 40%;
+    text-align: right;
+    background: linear-gradient(transparent 10%, #ffffff 0%);
+}
+
+.strength {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+    /* width: 100%; */
+    text-align: center;
+    margin: 10% auto 5%;
+}
+
+.strength li {
+    font-size: 1.5rem;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.strength img:hover {
+    transform: scale(1.1);
+}
+
+.strength img {
+    width: 100%;
+    transition-duration: 0.3s;
+}
+
+.about {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.aboutme_link {
+    display: block;
+    position: relative;
+    color: rgb(6, 37, 6);
+    font-size: 1.8rem;
+    text-align: center;
+    width: 20%;
+    margin: 0 30%;
+}
+
+.aboutme_link img {
+    position: absolute;
+    top: -41%;
+    left: 90%;
+}
+
+.works {
+    margin-top: 15%;
+}
+
+.works_list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.works_list li {
+    padding: 0 3% 6%;
+}
+
+.works_list img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.works_list img:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.card img {
+    /* max-width: 500px; */
+   object-fit: contain;
+}
+
+.contact p {
+    text-align: center;
+    margin: 5%;
+}
+
+/* works.html */
+.works_title {
+    margin-top: 15%;
+}
+
+.works_detail li {
+    width: 50%;
+    margin: 5% auto;
+    text-align: center;
+}
+
+.works_detail img {
+    /* width: 100%; */
+    filter: drop-shadow(2px 2px 7px gray)
+}
+
+.works_detail p {
+    font-size: 1.2rem;
+    text-align: left;
+    margin-top: 2%;
+}
+
+/* works_detail */
+.contents_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+
+.contents_text {
+    text-align: left;
+    line-height: 1.5;
+    width: 45%;
+    padding-right: 2%;
+    margin-left: 2%;
+}
+
+.contents_text h2 {
+    font-size: 1.2rem;
+    font-family: "Zen Maru Gothic", sans-serif;
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.contents_text p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.contents_text table {
+    margin-top: 4%;
+    width: 90%;
+}
+
+.contents_text table th {
+    font-weight: normal;
+    width: 23%;
+}
+
+.contents_text th,
+.contents_text td {
+    padding: 0.8% 0;
+    /* border-bottom: solid 1px gray; */
+}
+
+.contents_text th {
+    width: 30%;
+}
+
+.contents_text a:link,
+.contents_text a:visited {
+    color: rgb(6, 37, 6);
+}
+
+.contents_text a:hover {
+    color: rgb(219, 128, 132);
+}
+
+.content_img {
+    position: relative;
+    width: 30%;
+    margin-right: 18%;
+    /* margin-right: 20%; */
+    filter: drop-shadow(2px 2px 3px rgb(145, 144, 144, 0.5));
+}
+
+.content_img:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.img_sp {
+    position: absolute;
+    top: 50%;
+    left: 125%;
+    width: 40%;
+}
+
+.img_pc {
+    width: 160%;
+}
+
+.target_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.target {
+    width: 60%;
+    height: 100%;
+    margin-left: 2%;
+}
+
+.target th {
+    font-weight: normal;
+    text-align: left;
+}
+
+.target th,
+.target td {
+    line-height: 1;
+    padding: 1% 0;
+}
+
+.persona img,
+.imageboard img,
+.competitor img,
+.wireframe_sp img,
+.wireframe_pc img {
+    filter: drop-shadow(2px 2px 3px rgb(145, 144, 144, 0.5));
+}
+
+.persona img {
+    width: 90%;
+}
+
+.wireframe_sp {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 5%;
+
+}
+
+.wireframe_sp img {
+    display: block;
+    width: 90%;
+    margin: 5% auto;
+}
+
+.wireframe_pc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 4%;
+}
+
+.wireframe_pc img {
+    display: block;
+    width: 90%;
+    margin: 5% auto;
+}
+
+.other_wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.other h2 {
+    font-size: 1.6rem;
+    font-family: "Zen Maru Gothic", sans-serif;
+    margin-top: 18%;
+}
+
+.other_img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* works_detail_fashion.html */
+.barbie img {
+    margin: 0 0 10% 10%;
+}
+
+.first_row {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.first_row img {
+    width: 100%;
+    height: auto;
+}
+
+.first_row .img02 {
+    margin-right: 0px;
+} 
+
+.first_row .first_text {
+    font-family: "Oswald", sans-serif;
+    font-size: 6rem;
+    line-height: 1.05;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 95px 10px 0 0;
+}
+
+.first_text {
+    letter-spacing: -0.06em;
+} 
+
+.second_row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.second_row img {
+    height: 300px;
+}
+
+.second_text p {
+    width: 575px;
+}
+        
+.second_text p:first-of-type {
+    font-family: "Oswald", sans-serif;
+    font-size: 6rem;
+    margin-top: 80px;
+}
+
+.second_text p:last-of-type {
+    font-size: 1.13rem;
+}
+
+.third_row {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.third_row img {
+    height: 400px;
+}
+
+.third_text p:not(:nth-child(3)) {
+    font-family: "Oswald", sans-serif;
+    font-size: 6.3rem;
+    letter-spacing: -0.06em;
+    line-height: 0.9;
+    margin-left: 10px;
+}
+
+.third_text p:nth-child(2) {
+    padding-left: 100px;
+    margin-bottom: 1%;
+}
+
+
+.third_text p:nth-child(3) {
+    font-size: 1.13rem;
+    text-align: justify;
+    font-feature-settings: "halt";
+    width: 400px;
+    /* margin-left: 15%; */
+}
+
+/* about.html */
+.fv_about {
+    background-image: url(../img/fv_about.png);
+    background-repeat: no-repeat;
+    background-position: 20% 120%;
+    height: 70vh;
+    width: 100%;
+    margin-bottom: 5%;
+    writing-mode: vertical-rl;
+}
+
+.fv_about h2 {
+    margin: 20% 70% 0 0;
+}
+
+.aboutme {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutme_text {
+    width: 60%;
+    margin-left: 10%;
+}
+
+.name_en {
+    font-family: "Marcellus", serif;
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.8%;
+}
+
+.name_ja {
+    font-size: 1.3rem;
+    margin-bottom: 5%;
+}
+
+.aboutme img {
+    width: 50%;
+    margin: 0 17%;
+
+}
+
+.whatilike_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.whatilike h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 5%;
+}
+
+.whatilike_list li {
+    margin: 0 2% 10%;
+}
+
+.whatilike_list li:nth-child(2) {
+    font-size: 1.5rem;
+    font-family: "Marcellus", serif;
+    letter-spacing: 0.1em;
+    width: 330px;
+    height: 230px;
+    text-align: center;
+    padding: 6%;
+    background: url(../img/english_bg.jpg);
+    border-radius: 10px;
+}
+
+.english {
+    color: #3A3A3A;
+}
+
+.design h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 5%;
+}
+
+.design img {
+    display: block;
+    width: 30%;
+    margin: 0 auto 5%;
+}
+
+.design p {
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 2% 0 10%;
+}
+
+.skill h3 {
+    font-family: "Marcellus", serif;
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.skill ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.skill li {
+    padding: 0 3%;
+}
+
+.skill li img {
+    width: 80%;
+}
+
+.experience_wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.experience h3 {
+    font-family: "Marcellus", serif;
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.experience dl {
+    padding-right: 0.6%;
+    margin-top: 5.5%;
+}
+
+.experience dl:first-of-type {
+    width: 35%;
+}
+
+.experience dl:last-of-type {
+    margin-left: 2%;
+}
+
+.experience dt {
+    font-size: 1.3rem;
+}
+
+.experience dd {
+    line-height: 1.2;
+    padding-bottom: 4%;
+}
+
+.appreal {
+    margin-top: 105%;
+}
+
+.appreal_img {
+    position: absolute;
+    top: 78%;
+    left: 10%;
+    width: 10%;
+}
+
+.yearbar {
+    width:100%;
+}
+
+.yearbarsp {
+    display: none;
+}
+
+.aus {
+    margin-top: 58%;
+}
+
+.aus_img {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    width: 20%;
+}
+
+.canada {
+    margin-top: 22%;
+}
+
+.canada_texts {
+    width: 50%;
+}
+
+.canada_img {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    width: 20%;
+}
+
+/* banner */
+.banner li {
+    text-align: center;
+}
+
+.banner li p {
+    font-size: 1.3rem;
+    margin: 1% auto 5%;
+}
+
+/* footer */
+.copy {
+    text-align: right;
+    margin-top: 10%;
+    margin-bottom: 1%;
+    margin-right: 0.5%;
+}
+
+/* sp対応 */
+@media screen and (max-width:650px) {
+/* index */
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+main {
+    font-size: .9rem;
+}
+
+h1 {
+    width: 23%;
+}
+
+.menu-wrapper {
+  position: relative;
+}
+
+.menu-icon {
+  width: 40px;
+  height: 30px;
+  position: fixed; /* ← fixedにして常に左上固定 */
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 3;
+  display: inline-block;
+}
+
+.menu-icon span {
+  display: block;
+  height: 4px;
+  margin: 6px 0;
+  background: #B4895E; /* ハンバーガー線色 */
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+/* ハンバーガーがXに変形 */
+#menu-toggle:checked + .menu-icon span:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+#menu-toggle:checked + .menu-icon span:nth-child(2) {
+  opacity: 0;
+}
+#menu-toggle:checked + .menu-icon span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+/* オーバーレイ背景 */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+  z-index: 1;
+}
+
+#menu-toggle:checked ~ .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* メニュー本体（左から出す） */
+.menu {
+    position: fixed;
+    top: 0;
+    right: -250px; /* ← 初期位置を左へ */
+    width: 250px;
+    height: 100%;
+    background: #FFFDFA;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+    transition: right 0.4s ease;
+    z-index: 2;
+}
+
+#menu-toggle:checked ~ .menu {
+    right: 0; /* ← 開いたときは左0へ */
+}
+
+.menu ul {
+    display: block;
+    list-style: none;
+    padding: 60px 10px;
+}
+
+.menu li {
+    font-family: "Libre Bodoni", serif;
+    margin: 20px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: rgb(219, 128, 132);
+}
+
+.fv_img {
+    background-image: url(../img/fv_sp.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.fv_img p:first-of-type {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    letter-spacing: 0em;
+    padding-top: 22%;
+    padding-right: 0;
+    width:80%;
+    background: linear-gradient(transparent 75%, #ffffff 0%);
+}
+
+.fv_img p:last-of-type {
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 0em;
+    width: 80%;
+}
+
+.strength {
+    display: block;
+}
+
+.aboutme_link {
+    font-size: 1.3rem;
+    width: 35%;
+    margin: 0 15%;
+}
+
+.aboutme_link img {
+    width: 100%;
+    margin-left: 20%;
+    top: -33%;
+    /* left: 90%; */
+}
+
+.works {
+    margin-top: 20%;
+}
+
+.works_list {
+    display: block;
+}
+
+.works_list li {
+    margin: 5%;
+}
+
+.works_list img {
+    width: 250px;
+    height: 250px;
+}
+
+/* .contact p {
+    text-align: center;
+    margin: 5%;
+} */
+
+
+/* footer */
+.copy {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/* about.html */
+.fv_about h2 {
+    margin: 50% 60% 0 0;
+    color: white;
+}
+
+.aboutme {
+    display: block;
+}
+
+.aboutme_text {
+    width: 100%;
+    margin-left: 0;
+}
+
+.name_en {
+    font-size: 1.5rem;
+    margin-top: 20%;
+    margin-bottom: 0;
+}
+
+.name_ja {
+    font-size: 1.1rem;
+    margin-bottom: 5%;
+}
+
+.aboutme img {
+    width: 100%;
+    margin: 5% 0;
+}
+
+.whatilike_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin: 0;
+}
+
+.whatilike h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20% 0 0;
+}
+
+.whatilike_list li {
+    text-align: center;
+    width: 100%;
+    padding: 30px 10px;
+    margin: 0 auto;
+}
+
+.whatilike_list li img{
+    width: 100%;
+    text-align: center;
+}
+
+.whatilike_list li:nth-child(2) {
+    font-size: 1.2rem;
+    width: 120px;
+    height: 120px;
+    padding: 50px 0;
+    border-radius: 8px;
+}
+
+.design h3 {
+    font-size: 1.5rem;
+    margin: 20% 0 10%;
+}
+
+.design img {
+    width: 90%;
+    margin: 0 auto 10%;
+}
+
+.design p {
+    font-size: 1.1rem;
+    width: 100%;
+    margin: 2% auto 10%;
+}
+
+.skill h3 {
+    font-size: 1.5rem;
+    margin-top: 20%;
+}
+
+.skill ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 0;
+}
+
+.skill li {
+    padding: 5% 5%;
+}
+
+.skill li img {
+    width: 100%;
+}
+
+.experience {
+    margin-bottom: 420%;
+}
+.experience_wrapper {
+    margin-left: 0;
+    margin-bottom: 30%;
+    background: blue;
+}
+
+.experience h3 {
+    font-size: 1.5rem;
+    margin-top: 20%;
+}
+
+.experience dl {
+    padding-right: 0;
+    margin-top: 0;
+}
+
+.experience dl:first-of-type {
+    position: absolute;
+    /* top: 6%; */
+    left: 16%;
+    width: 80%;
+    margin-top: 25%;
+    margin-left: 0;
+    order: 2;
+}
+
+.experience dl:last-of-type {
+position: absolute;
+    /* top: 30%; */
+    left: 16%;
+    width: 70%;
+    margin-top: 80%;
+    margin-left: 0;
+    order: 3;
+}
+
+.experience dt {
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+.experience dd {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    padding-bottom: 2%;
+}
+
+.appreal {
+    margin-top: 165%;
+}
+
+.appreal_img {
+    position: absolute;
+    /* top: 78%; */
+    left: 35%;
+    width: 40%;
+    margin-top: 240%;
+}
+
+.yearbar{
+    display: none;
+}
+
+.yearbarsp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 50%;
+    /* margin: 0; */
+}
+
+.aus_img {
+    /* top: 37%; */
+    left: 20%;
+    width: 70%;
+    margin-top: 143%;
+}
+
+.canada {
+    margin-top: 250%;
+}
+
+.canada_texts {
+    width: 100%;
+}
+
+.canada_img {
+    /* top: 97%; */
+    left: 20%;
+    width: 70%;
+    margin-top: 352%;
+}
+
+
+/* works.html */
+.works_title {
+    font-size: 1.4rem;
+    margin-top: 25%;
+}
+
+.works_detail li {
+    width: 100%;
+    margin: 10% auto;
+}
+
+.works_detail img {
+    width: 340px;
+}
+
+.works_detail p {
+    font-size: 1rem;
+}
+
+/* works_detail */
+.contents_container {
+    display: block;
+    margin: 0 auto;
+}
+
+.contents_text {
+    width: 100%;
+    margin: 30% auto 10%;
+    padding: 0;
+}
+
+.contents_text h2 {
+    font-size: 1rem;
+}
+
+.contents_text p {
+    font-size: 1.2rem;
+}
+
+.contents_text table {
+    width: 100%;
+}
+
+.contents_text table th {
+    width: 28%;
+}
+
+.contents_text th,
+.contents_text td {
+    padding: 0.5% 0;
+}
+
+.content_img {
+    width: 55%;
+}
+
+.img_sp {
+    top: 30%;
+    left: 135%;
+}
+
+.target_wrapper {
+    display: block;
+    margin: 5% auto;
+}
+
+.target {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.target th,
+.target td {
+    line-height: 1.2;
+}
+
+.persona {
+    text-align: center;
+}
+
+.persona img {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.wireframe_sp {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 5%;
+}
+
+.wireframe_sp img {
+    width: 90%;
+    margin: 5% auto;
+}
+
+.wireframe_pc {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 5%;
+}
+
+.wireframe_pc img {
+    width: 90%;
+    margin: 5% auto;
+}
+
+.other_wrapper {
+    display: block;
+    margin-top: 5%;
+}
+
+.other h2 {
+    font-size: 1.3rem;
+    margin-top: 18%;
+}
+
+.other_img {
+    display: block;
+}
+
+.persona img,
+.imageboard img,
+.competitor img {
+    width: 100%;
+}
+
+/* fashion.html */
+.barbie {
+    margin: 0 auto;
+}
+
+.barbie img {
+    margin: 0;
+}
+
+.first_row {
+    display: block;
+} 
+
+.first_row .first_text {
+    font-size: 4.3rem;
+    margin: 0;
+}
+
+.second_row {
+    display: block;
+}
+
+.second_row img {
+    height: auto;
+    width: 100%;
+}
+
+.second_text p {
+    width: 100%;
+}
+        
+.second_text p:first-of-type {
+    font-size: 4.3rem;
+    margin-top: 0;
+}
+
+.second_text p:last-of-type {
+    font-size: 1rem;
+}
+
+.third_row {
+    display: block;
+}
+
+.third_row img {
+    height: auto;
+    width: 100%;
+}
+
+.third_text p:not(:nth-child(3)) {
+    font-size: 4.3rem;
+    margin-left: 0;
+}
+
+.third_text p:nth-child(2) {
+    margin-bottom: 1%;
+}
+
+
+.third_text p:nth-child(3) {
+    font-size: 1rem;
+    width: 100%;
+}
+
+/* banner */
+.banner li {
+    text-align: left;
+}
+
+.banner li p {
+    font-size: 1rem;
+    margin: 1% auto 5%;
+}
+
+.banner li img {
+    width: 100%;
+}
+
+
+}

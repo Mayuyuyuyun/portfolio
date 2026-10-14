@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+#switch{
+width: 30px;
+height: 40px;
+background: url(../img/s_off.png) no-repeat;
+background-size: 100% 100%;
+cursor: pointer;
+}
+#switch.on_switch{
+background: url(../img/s_on.png) no-repeat;
+background-size: 100% 100%;
+}
+#light{
+width: 140px;
+height: 140px;
+background: url(../img/off.png) no-repeat;
+background-size: 100% 100%;
+}
+#light.on_light{
+background: url(../img/on.png) no-repeat;
+background-size: 100% 100%;
+}
